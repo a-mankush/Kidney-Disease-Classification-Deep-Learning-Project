@@ -9,14 +9,14 @@ project_name = "cnnClassifier"
 
 list_of_flies: list[str] = [
     ".github/workflow/.gitkeep",
-    f"scr/{project_name}/__init__.py",
-    f"scr/{project_name}/components/__init__.py",
-    f"scr/{project_name}/utils/__init__.py",
-    f"scr/{project_name}/config/__init__.py",
+    f"src/{project_name}/__init__.py",
+    f"src/{project_name}/components/__init__.py",
+    f"src/{project_name}/utils/__init__.py",
+    f"src/{project_name}/config/__init__.py",
     f"src/{project_name}/config/configuration.py",
-    f"scr/{project_name}/pipeline/__init__.py",
-    f"scr/{project_name}/entity/__init__.py",
-    f"scr/{project_name}/constants/__init__.py",
+    f"src/{project_name}/pipeline/__init__.py",
+    f"src/{project_name}/entity/__init__.py",
+    f"src/{project_name}/constants/__init__.py",
     "config/config.yaml",
     "dvc.yaml",
     "params.yaml",
@@ -39,7 +39,6 @@ for filepath in list_of_flies:
         with open(filepath, "w") as f:
             pass
         logging.info(f"Creating empty file: {filepath}")
-    
+
     else:
         logging.info(f"{filename} already exists!")
-        
